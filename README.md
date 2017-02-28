@@ -2,19 +2,22 @@
 
 > 第三方依赖。
 [rsa](https://pypi.python.org/pypi/rsa/), [requests](https://pypi.python.org/pypi/requests/)
+
 > 可选:
 [PYQT5](https://riverbankcomputing.com/software/pyqt/download5)
 
-> 使用方法:
+## 使用方法:
 
 0.安装有PYQT5, 运行window.py。
 导入文本:<br />
-账号 密码<br />
-账号2 密码2<br />
-<img src='url'>
+```
+账号 密码
+账号2 密码2
+```
+<img src='https://github.com/HuberTRoy/veriQQ/blob/master/showpic/0.jpg'>
 
-无验证码会直接验证，有验证码需要手动输入验证码，验证码会在输入了4个字符后自动验证。
-<img src='url2'>
+无验证码会直接验证，有验证码需要手动输入验证码，验证码会在输入了4个字符后自动验证。<br />
+<img src='https://github.com/HuberTRoy/veriQQ/blob/master/showpic/1.gif'>
 
 1.没有安装PYQT5, 运行api.py.
 直接运行可测试运行情况。验证码保存在当前目录的catch目录下。
