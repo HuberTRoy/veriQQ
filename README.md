@@ -38,3 +38,4 @@ https://ssl.ptlogin2.qq.com/check?xxx
 ```
 这个请求里返回的一个值，不过返回的盐就是用QQ号做的盐，其他加密方法一致。
 
+踩得一些坑请看 analyze文件。
