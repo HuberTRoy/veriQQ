@@ -1,0 +1,304 @@
+"""
+GET 
+/login?u=386446957&verifycode=!IIY
+&pt_vcode_v1=0&
+pt_verifysession_v1=8ea3ea6c40265c0fa2391f8cada2eb5ece1fdd97391d8f636469fc5106207f986be8bd5b4ee4b4743caf37c103b7a37845f8d1b159634073
+&p=BFqaPoiwADj1Fp8uYHEmwODCnLHLPHr6kIMFleFq9k-byyMR6y0rHiKcOHclM9CschnJ9xR1JugQBbY9Be1cmR7nBdNzn6Xsdiw2IVwth-tmYcPxR3QlvKSSUEZFjUxzybowZj3rXl6tcOEI7iAe8L5ErEtsfy3O*XdETAvdjv-DglNS6isAl6cMAc38i5-FQMxXHI-4Sr606o4VK3DDjimUHLlkP7KGEdxbdhoxVmTcGAa3O5*NP44wKgGvEA9ZXkcbwABc0YFr4dXhyat96*bEJv9RqlPMO4nDcmNxJBh-HrisaHSH*G62BEWBKjN5oN1gMkba21oMYm3HT07qcA__
+&pt_randsalt=2
+&u1=https%3A%2F%2Fmail.qq.com%2Fcgi-bin%2Flogin%3Fvt%3Dpassport%26vm%3Dwpt%26ft%3Dloginpage%26target%3D%26account%3D386446957
+&ptredirect=1&h=1&t=1&g=1&from_ui=1&ptlang=2052&action=1-22-1487298888970&js_ver=10196&js_type=1&login_sig=HX7a-ZTZfDmmJbaFWHmB8H10Ujoc0aXV7KfK6gXCbAD*iMShUZtAcUtzmOLK6xSf&pt_uistyle=25&aid=522005705&daid=4& HTTP/1.1
+Host: ssl.ptlogin2.qq.com
+Connection: close
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
+Referer: https://xui.ptlogin2.qq.com/cgi-bin/xlogin?appid=522005705&daid=4&s_url=https://mail.qq.com/cgi-bin/login?vt=passport%26vm=wpt%26ft=loginpage%26target=&style=25&low_login=1&proxy_url=https://mail.qq.com/proxy.html&need_qr=0&hide_border=1&border_radius=0&self_regurl=http://zc.qq.com/chs/index.html?type=1&app_id=11005?t=regist&pt_feedback_link=http://support.qq.com/discuss/350_1.shtml&css=https://res.mail.qq.com/zh_CN/htmledition/style/ptlogin_input24e6b9.css
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: zh-CN,zh;q=0.8
+Cookie: pac_uid=0_58a582833952a; c_sub_id43=43; pgv_pvid=9614272140; o_cookie=7568520; pt_recent_uins=0bdcd9997284932b612475f57fbad67ac4b0c18a14eebd0f0b469b23bc5a42567aea8d04c49289095e8d266e7953e25aa7ab678205d4bd0c; ptcz=f5ff62f5b37bb22e5143dc9a16bae6e62a90783098414423e40c48c6eff8270e; pt2gguin=o0386446957; pt_login_sig=HX7a-ZTZfDmmJbaFWHmB8H10Ujoc0aXV7KfK6gXCbAD*iMShUZtAcUtzmOLK6xSf; pt_clientip=be6cb62b00cba62d; pt_serverip=cdbf0af49209ba03; pt_local_token=-1514480582; uikey=1bf3e0524d9c4d75feb579020f7f8fcb6d3061504eceb49a0e152c54d7950805; pt_guid_sig=9d16194137a008a81fe485440b51580b4c4a709b9973b89b36f808b685802390; ETK=E-uEbG-mJL4FaZ1FSv0f9fLcxZHLF9FQsBQFGKurb1mliQv1E4r1DJM5xzt0gwN64e5JK8AZiALcQvTTXAIwYg__; verifysession=h02SsE5TD7lvK5px99ui210a8gpGGJCZWW0IXR2xGVdVdTccR2Q2cyKvIZ4GZ6X6vycL0jYTG_ll5WWU-CEVSz_9BZH_oTsXFva; ptisp=ctc; qrsig=JW6WdpjswwiM5bzsZBYn32phPBSAZeymz*6bX9VVDlk0iOYiOPJ22iR16CsN1RbA; confirmuin=0; ptvfsession=8ea3ea6c40265c0fa2391f8cada2eb5ece1fdd97391d8f636469fc5106207f986be8bd5b4ee4b4743caf37c103b7a37845f8d1b159634073; ptdrvs=TXBvumPoSSIzwpKfVWvpm-qlYPal5lDaS0y1V4orpc0_; ptui_loginuin=386446957
+"""
+
+'''
+# 通过该URL返回，如果第一个值为1 则是需要验证码，如果是0则是不需要验证码，则第二个值为不需要验证码填的值。
+https://ssl.ptlogin2.qq.com/check?regmaster=&pt_tea=1&pt_vcode=0&uin=12345678&appid=522005705&js_ver=10151&js_type=1&login_sig=&u1=https%3A%2F%2Fmail.qq.com%2Fcgi-bin%2Flogin%3Fvt%3Dpassport%26vm%3Dwpt%26ft%3Dloginpage%26target%3D&r=0.31754892738536  
+ptui_checkVC('1', 'Xf0p7_xwheuxJoRtEHf4pHJs2qGxMThYmsZ4j8jSiQCXljdS1oSg3Q**', '\x00\x00\x00\x00\x17\x08\xb6\x6d', '' , '2');
+ptui_checkVC('1', 'E7SUY-UorktUVWA26W7RD8-e0gCXvOrbX0pW28up7KOnF6Aw2bMLRw**', '\x00\x00\x00\x00\x17\x08\xb6\x6d', '' , '2');
+ptui_checkVC('0','!VAX','\xf5\x8e\x00\x78\x04\x3c\x87\xac','3cdd20c52738395f255999fc458eb3b11b98bca27a1e9c7a20c88e96ee2f7b47f0c446a69d48dac9e0a1a8295e159c01181c36bfb230b9c6','3');
+第二个值为vcode，第三个是salt，第四个值是session，没有验证码时才有，没有验证码时直接会附到cookies里，有验证码时为空''直到请求验证码时才会附到cookies里.
+
+# cap_cd 的值则为 vcode值，需要请求的验证码。
+https://ssl.captcha.qq.com/getimage?uin=_qq&aid=522005705&cap_cd=verify_cap_cd&0.7659631329588592 
+uin填入QQ，cap_cd填入请求来的值。
+
+'''
+"""
+password的加密:
+pwd_md5_bytes： 计算得到账户密码的md5值，字节类型，16字节长度；
+
+salt_bytes： salt为字符串，形如：“\x81\x5d\x88\x42\x9e\xd0\x8b\x90”，需要将其转换为：“81 5d 88 42 9e d0 8b 90”，这就是在内存中的保存的数据；
+
+pwd_salt_string： 计算pwd_md5_bytes + salt_bytes的md5值，字符串类型，32字节长度；
+
+rsa_modulus： RSA的模数，值为：
+
+[html] view plain copy 在CODE上查看代码片派生到我的代码片
+F20CE00BAE5361F8FA3AE9CEFA495362FF7DA1BA628F64A347F0A8C012BF0B254A30CD92ABFFE7A6EE0DC424CB6166F8819EFA5BCCB20EDFB4AD02E412CCF579B1CA711D55B8B0B3AEB60153D5E0693A2A86F3167D7847A0CB8B00004716A9095D9BADC977CBB804DBDCBA6029A9710869A453F27DFDDF83C016D928B3CBF4C7  
+该值为十六进制字符串，需要将其转换为字节序；
+
+rsa_exponent： RSA的指数，值为：3，转换为真实字节序；
+
+rsa_pub_key： 根据模数rsa_modulus和指数rsa_exponent计算出公钥，依赖openssl库，如下：
+
+[cpp] view plain copy 在CODE上查看代码片派生到我的代码片
+RSA *pub_key = RSA_new();  
+pub_key->n = BN_bin2bn((unsigned char *)sn_hex, 128, pub_key->n);  
+pub_key->e = BN_bin2bn((unsigned char *)se_hex, 1, pub_key->e);  
+rsa_data_string： 使用上面的公钥rsa_pub_key对密码的MD5值，即：pwd_md5_bytes 进行加密，并将密文转换为十六进制的字符串形式；
+
+[cpp] view plain copy 在CODE上查看代码片派生到我的代码片
+int rsa_len = RSA_public_encrypt(16, (unsigned char *)passHash, (unsigned char *)rsa_outbuf, pub_key, RSA_PKCS1_PADDING);  
+rsa_datalen_string： 用公钥加密后的数据的长度，转为十六进制字符串形式；
+
+vcode_string： 将vcode值转换为十六进制字符串形式；
+
+vcode_len_string： 将vcode的长度转换为十六进制的字符串形式；
+
+salt_bytes_string： 将salt_bytes转换为十六进制字符串形式；
+
+tea_string： 将rsa_datalen_string + rsa_data_string + salt_bytes_string + vcode_len_string + vcode_string 合并进行TEA加密运算；
+
+pwd_p： 对tea_string做base64编码运算，将输出的编码文本中的'/', '+', '='分别替换为'-', '*', '_'，最终得到QQ登录密码；
+"""
+
+ 练习用ptui_checkVC('1','g7e66Tdtic6D25cj-KuqAkvx7qhmy67ivM7DQ2fqRm7p_qJrnXUWzg**','\x00\x00\x00\x00\x17\x08\xb6\x6d','','2');
+# &p=
+# 4CPoGFgSdJ0y91yOpLYYH9lmXswJ3ddqLiL6tojmvqmXEw3M*FXLnG0q6U-BuQ98IoF7W0TFFAspdTGXfCoIcbElbH7rj5G7Fx-dstjrVmATMtVqk*XbxbEFzl-a-icCmoRUBBlPEhXtQuUMV-kjgGwrHkuXpMFRWjvwtnRi01wkiIHQVWwvx6GXK8tW-YIjAKr9pG6z06-B5Wfjo-7NB0FjRinGoBClvU4chAoZZUrRXXpdS6IwoygsVjW3p5rN4mVfsELYk28yJ6fl3MWLe-0b0usEGeh-t8ibsJfnLmrrIHA65rjk-Y6Rca2KEN1iKiHJWs5gAjlP1nhln7foQA__
+# 24Uh9QGEZzuGqQ7ox5x5IX8ojQmvCBElKBs15wY*N9U2bsZeGFxPi3Kq6l4vp7TbmewWzxPITb8yZaIQT1a9BG-LobjV589iQO-eJHAE9hx5Dj0L*zaVW0vqCyfHAUYfl7rWu5ClgsYq6VLKkgyTAeYOGJLLSij1pjTjCN8*1VZVV72ZGS7BHhlIS2pzqxoT7JOUWYEALS0qLy6XSozjV2Snx95MhCyJ8WzEgBm9i1MjWAO1ZMshRwtgvUCy1lmbunvAYyXALKwX*igkp-L28w__
+
+
+# vcode = 'g7e66Tdtic6D25cj-KuqAkvx7qhmy67ivM7DQ2fqRm7p_qJrnXUWzg**'
+# salt_bytes = b'\x00\x00\x00\x00\x17\x08\xb6\x6d'
+# 首先对密码进行一次md5。
+
+# def getEncryption(password, salt_bytes, vcode):
+#     pwd = hashlib.md5()   
+#     pwd.update(password.encode())   
+#     pwd = pwd.hexdigest()
+
+#     # 计算盐。
+#     # a = binascii.hexlify(salt_bytes)
+#     # print(a)
+
+#     # md5后的密码+盐在进行一次md5.
+#     pwd = pwd + salt_bytes
+#     pwdmd5 = hashlib.md5()
+#     pwdmd5.update(pwd.encode())
+#     pwd = bytes.fromhex(pwdmd5.hexdigest())
+#     pwds = pwdmd5.hexdigest()
+
+#     # 用RSA来加密。
+#     puk = rsa.PublicKey(int(
+#         'F20CE00BAE5361F8FA3AE9CEFA495362'
+#         'FF7DA1BA628F64A347F0A8C012BF0B25'
+#         '4A30CD92ABFFE7A6EE0DC424CB6166F8'
+#         '819EFA5BCCB20EDFB4AD02E412CCF579'
+#         'B1CA711D55B8B0B3AEB60153D5E0693A'
+#         '2A86F3167D7847A0CB8B00004716A909'
+#         '5D9BADC977CBB804DBDCBA6029A97108'
+#         '69A453F27DFDDF83C016D928B3CBF4C7',
+#         16
+#     ), 3)
+
+#     # puk = rsa.PublicKey(int("e9a815ab9d6e86abbf33a4ac64e9196d5be44a09bd0ed6ae052914e1a865ac8331fed863de8ea697e9a7f63329e5e23cda09c72570f46775b7e39ea9670086f847d3c9c51963b131409b1e04265d9747419c635404ca651bbcbc87f99b8008f7f5824653e3658be4ba73e4480156b390bb73bc1f8b33578e7a4e12440e9396f2552c1aff1c92e797ebacdc37c109ab7bce2367a19c56a033ee04534723cc2558cb27368f5b9d32c04d12dbd86bbd68b1d99b7c349a8453ea75d1b2e94491ab30acf6c46a36a75b721b312bedf4e7aad21e54e9bcbcf8144c79b6e3c05eb4a1547750d224c0085d80e6da3907c3d945051c13c7c1dcefd6520ee8379c4f5231ed", 16), 3)
+#     pwd = binascii.b2a_hex(rsa.encrypt(pwd, puk)).decode()
+
+#     rsa_len = hex(len(a) // 2)[2:]
+
+#     # 根据vcode
+
+#     vcode_hex = binascii.hexlify(vcode.upper().encode()).decode()
+
+#     vcode_hex_len = hex(len(vcode_hex) // 2)[2:]
+
+#     rsa_len =  '0' * (4 - len(rsa_len)) + rsa_len
+
+#     vcode_hex_len = '0' * (4 - len(vcode_hex_len)) + vcode_hex_len
+
+#     # print(rsa_len)
+#     # print(pwd)
+#     # print(a.decode())
+#     salt = rsa_len + pwd + a.decode() + vcode_hex_len + vcode_hex
+
+#     pwd_end = base64.b64encode(tea.encrypt(bytes.fromhex(salt), bytes.fromhex(pwds))).decode().replace('/', '-').replace('+', '*').replace('=', '_')
+
+#     return pwd_end
+
+
+# getEncryption('123456', salt_bytes, vcode)
+# print(vcode_hex_len)
+# print(pwd)
+# print(a.decode())
+
+
+"""
+u:  QQ号，无加密。
+verifycode: 验证码，无加密。
+pt_vcode_v1: 0，在下列js里有。
+pt_verifysession_v1: 对应cookies里的。
+p: QQ密码，未知加密。
+pt_randsalt: 看名字貌似是随机的盐。
+u1: 
+"""
+"""
+! function() {
+    window.onerror = function(n, o, e) {
+        var t = "https:" == location.protocol ? "https://ssl.qq.com/ptlogin/cgi-bin/ptlogin_report?" : "http://log.wtlogin.qq.com/cgi-bin/ptlogin_report?",
+            _ = document.createElement("img"),
+            i = encodeURIComponent(n + "|_|" + o + "|_|" + e + "|_|" + window.navigator.userAgent);
+        _.src = t + "id=195279&msg=" + i + "&v=" + Math.random()
+    }
+}();
+var g_cdn_js_fail = !1,
+    pt = {};
+pt.str = {
+    no_uin: "您还没有输入帐号！",
+    no_pwd: "您还没有输入密码！",
+    no_vcode: "您还没有输入验证码！",
+    inv_uin: "请输入正确的帐号！",
+    inv_vcode: "请输入完整的验证码！",
+    qlogin_expire: "您所选择号码对应的QQ已经失效，请检查该号码对应的QQ是否已经被关闭。",
+    other_login: "帐号登录",
+    h_pt_login: "帐号密码登录",
+    otherqq_login: "QQ帐号密码登录",
+    onekey_return: "返回扫码登录"
+}, pt.ptui = {
+    s_url: "https://mail.qq.com/cgi-bin/login?vt=passport&vm=wpt&ft=loginpage&target=",
+    proxy_url: "https://mail.qq.com/proxy.html",
+    jumpname: encodeURIComponent(""),
+    mibao_css: encodeURIComponent(""),
+    defaultUin: "",
+    lockuin: parseInt("0"),
+    href: "https://xui.ptlogin2.qq.com/cgi-bin/xlogin?appid=522005705&daid=4&s_url=https://mail.qq.com/cgi-bin/login?vt=passport%26vm=wpt%26ft=loginpage%26target=&style=25&low_login=1&proxy_url=https://mail.qq.com/proxy.html&need_qr=0&hide_border=1&border_radius=0&self_regurl=http://zc.qq.com/chs/index.html?type=1&app_id=11005?t=regist&pt_feedback_link=http://support.qq.com/discuss/350_1.shtml&css=https://res.mail.qq.com/zh_CN/htmledition/style/ptlogin_input24e6b9.css",
+    login_sig: "",
+    clientip: "",
+    serverip: "",
+    version: "201203081004",
+    ptui_version: encodeURIComponent("10196"),
+    isHttps: !1,
+    cssPath: "https://ui.ptlogin2.qq.com/style.ssl/25",
+    domain: encodeURIComponent("qq.com"),
+    fromStyle: parseInt(""),
+    pt_3rd_aid: encodeURIComponent("0"),
+    appid: encodeURIComponent("522005705"),
+    lang: encodeURIComponent("2052"),
+    style: encodeURIComponent("25"),
+    low_login: encodeURIComponent("1"),
+    daid: encodeURIComponent("4"),
+    regmaster: encodeURIComponent(""),
+    enable_qlogin: "1",
+    noAuth: "0",
+    target: isNaN(parseInt("1")) ? {
+        _top: 1,
+        _self: 0,
+        _parent: 2
+    }["1"] : parseInt("1"),
+    csimc: encodeURIComponent("0"),
+    csnum: encodeURIComponent("0"),
+    authid: encodeURIComponent("0"),
+    auth_mode: encodeURIComponent("0"),
+    pt_qzone_sig: "0",
+    pt_light: "0",
+    pt_vcode_v1: "0",
+    pt_ver_md5: "000D39BAC4DB34A7C186E497472601012572664F2233EAB71D8DAC03A0",
+    gzipEnable: "1"
+};
+
+"""
+
+=================
+# 失败的尝试。
+salt_bytes = b'\x00\x00\x00\x00\x17\x08\xb6\x6d'
+# 这里要处理的结果是000000001708b66d.
+
+pwd = hashlib.md5()   
+pwd.update(password.encode())   
+pwd = pwd.hexdigest()
+
+# 计算盐。
+# a = binascii.hexlify(salt_bytes)
+a = salt_bytes
+# print(a)
+
+# md5后的密码+盐在进行一次md5.
+pwd = pwd + salt_bytes
+pwdmd5 = hashlib.md5()
+pwdmd5.update(pwd.encode())
+pwd = bytes.fromhex(pwdmd5.hexdigest())
+pwds = pwdmd5.hexdigest()
+
+# 用RSA来加密。
+puk = rsa.PublicKey(int(
+    'F20CE00BAE5361F8FA3AE9CEFA495362'
+    'FF7DA1BA628F64A347F0A8C012BF0B25'
+    '4A30CD92ABFFE7A6EE0DC424CB6166F8'
+    '819EFA5BCCB20EDFB4AD02E412CCF579'
+    'B1CA711D55B8B0B3AEB60153D5E0693A'
+    '2A86F3167D7847A0CB8B00004716A909'
+    '5D9BADC977CBB804DBDCBA6029A97108'
+    '69A453F27DFDDF83C016D928B3CBF4C7',
+    16
+), 3)
+
+# puk = rsa.PublicKey(int("e9a815ab9d6e86abbf33a4ac64e9196d5be44a09bd0ed6ae052914e1a865ac8331fed863de8ea697e9a7f63329e5e23cda09c72570f46775b7e39ea9670086f847d3c9c51963b131409b1e04265d9747419c635404ca651bbcbc87f99b8008f7f5824653e3658be4ba73e4480156b390bb73bc1f8b33578e7a4e12440e9396f2552c1aff1c92e797ebacdc37c109ab7bce2367a19c56a033ee04534723cc2558cb27368f5b9d32c04d12dbd86bbd68b1d99b7c349a8453ea75d1b2e94491ab30acf6c46a36a75b721b312bedf4e7aad21e54e9bcbcf8144c79b6e3c05eb4a1547750d224c0085d80e6da3907c3d945051c13c7c1dcefd6520ee8379c4f5231ed", 16), 3)
+pwd = binascii.b2a_hex(rsa.encrypt(pwd, puk)).decode()
+
+rsa_len = hex(len(a) // 2)[2:]
+
+# 根据vcode
+
+vcode_hex = binascii.hexlify(vcode.upper().encode()).decode()
+
+vcode_hex_len = hex(len(vcode_hex) // 2)[2:]
+
+rsa_len =  '0' * (4 - len(rsa_len)) + rsa_len
+
+vcode_hex_len = '0' * (4 - len(vcode_hex_len)) + vcode_hex_len
+
+# print(rsa_len)
+# print(pwd)
+# print(a.decode())
+salt = rsa_len + pwd + a + vcode_hex_len + vcode_hex
+
+pwd_end = base64.b64encode(tea.encrypt(bytes.fromhex(salt), bytes.fromhex(pwds))).decode().replace('/', '-').replace('+', '*').replace('=', '_')
+
+return pwd_end
+
+# 现成的加密。
+puk = rsa.PublicKey(int(
+    'F20CE00BAE5361F8FA3AE9CEFA495362'
+    'FF7DA1BA628F64A347F0A8C012BF0B25'
+    '4A30CD92ABFFE7A6EE0DC424CB6166F8'
+    '819EFA5BCCB20EDFB4AD02E412CCF579'
+    'B1CA711D55B8B0B3AEB60153D5E0693A'
+    '2A86F3167D7847A0CB8B00004716A909'
+    '5D9BADC977CBB804DBDCBA6029A97108'
+    '69A453F27DFDDF83C016D928B3CBF4C7',
+    16
+), 3)
+e = int(salt_bytes).to_bytes(8, 'big')
+o = hashlib.md5(password.encode())
+r = bytes.fromhex(o.hexdigest())
+p = hashlib.md5(r + e).hexdigest()
+a = binascii.b2a_hex(rsa.encrypt(r, puk)).decode()
+s = hex(len(a) // 2)[2:]
+l = binascii.hexlify(vcode.upper().encode()).decode()
+c = hex(len(l) // 2)[2:]
+c = '0' * (4 - len(c)) + c
+s = '0' * (4 - len(s)) + s
+salt = s + a + binascii.hexlify(e).decode() + c + l
+return base64.b64encode(
+    tea.encrypt(bytes.fromhex(salt), bytes.fromhex(p))
+).decode().replace('/', '-').replace('+', '*').replace('=', '_')
+
+# 两个对比发现。
+# salt_byte不同，salt_byte获取后str -> utf-8 即可，encode。
+# 上面那个是对QQ号进行的转换，转换后与获取的一样。
